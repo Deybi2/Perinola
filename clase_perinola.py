@@ -4,7 +4,7 @@ class Perinola:
     opciones = ["Pon 1", "Pon 2", "Toma 1", "Toma 2", "Todos Toman", "Ponen Todos"]
 
     def __init__(self):
-        self.cara_visible = None 
+        self.cara_visible = random.choice(self.opciones)
     
     def tirar(self):
         self.cara_visible = random.choice(self.opciones)
